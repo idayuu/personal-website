@@ -1,0 +1,221 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fav Foods</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf7f1;
+            color: #333;
+        }
+
+        .header {
+            background-color: #f9ebe0;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #e4d6c6;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #8b5e3c;
+        }
+
+        .nav {
+            background-color: #fef5ee;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #8b5e3c;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #5d4037;
+        }
+
+        /* Slider Styles */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero h2 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            margin: 0;
+            color: white;
+        }
+
+        .hero p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            margin: 10px 0;
+            color: white;
+        }
+
+        /* Food Items */
+        table {
+            width: 80%;
+            margin: 30px auto;
+            padding: 30px;
+            border-spacing: 20px;
+            text-align: center;
+        }
+
+        .food-item {
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+
+        .food-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .food-item h3 {
+            margin: 10px;
+            font-size: 20px;
+            color: #8b5e3c;
+        }
+
+        .food-item p {
+            margin: 10px;
+            font-size: 14px;
+            color: #6f4e37;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f9ebe0;
+            border-top: 2px solid #e4d6c6;
+            color: #6f4e37;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><marquee>&#10051;SkyRay Portfolio&#10051;</marquee></h1>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="foods.html">Foods</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="educations.html">Educations</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+
+    
+    <div class="hero">
+        <div class="slider" id="slider">
+            
+            <div class="slide">
+                <img src="images/banner1.jpg" alt="Food 1">
+            </div>
+            
+            <div class="slide">
+                <img src="images/banner2.jpg" alt="Food 2"> 
+            </div>
+            
+        </div>
+        <h2>Delicious Delights</h2>
+        <p>Explore the flavors of Idayu's favorite dishes</p>
+    </div>
+
+    <table>
+        <tr>
+		
+            <td class="food-item">
+                <img src="images/topokki.jpg" alt="Tteokbokki">
+                <h3>Tteokbokki</h3>
+                <p>Spicy, chewy rice cakes coated in a luscious, fiery gochujang sauce.</p>
+            </td>
+            <td class="food-item">
+                <img src="images/steak.jpg" alt="Steak">
+                <h3>Steak</h3>
+                <p>A juicy, perfectly seared cut of beef bursting with rich, savory flavors.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="food-item">
+                <img src="images/sushi.jpg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Delicate rolls of vinegared rice topped with fresh, melt-in-your-mouth seafood or vibrant vegetables.</p>
+            </td>
+            <td class="food-item">
+                <img src="images/dumpling.jpg" alt="Dumplings">
+                <h3>Dumplings</h3>
+                <p>Tender, golden parcels stuffed with savory fillings that burst with flavor in every bite.</p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <p>&copy; 2024 Idayu's Fav Foods. She definitely a foodie <3</p>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slider = document.getElementById('slider');
+
+        function changeSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            const newTransform = -currentIndex * 100 + '%';
+            slider.style.transform = `translateX(${newTransform})`;
+        }
+
+        setInterval(changeSlide, 3000); // Change slide every 3 seconds
+    </script>
+
+</body>
+</html>
+
+
+
+

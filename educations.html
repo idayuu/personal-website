@@ -1,0 +1,287 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf7f1;
+            color: #333;
+        }
+
+        .header {
+            background-color: #f9ebe0;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #e4d6c6;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #8b5e3c;
+        }
+
+        .nav {
+            background-color: #fef5ee;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a.special-nav {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            background-color: #8b5e3c;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        .nav a.special-nav:hover {
+            background-color: #5d4037;
+            transform: scale(1.05);
+        }
+
+        .nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #8b5e3c;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #5d4037;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 50px;
+            background-color: #f9ebe0;
+            color: #8b5e3c;
+        }
+
+        .intro h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .timeline {
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timeline h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #8b5e3c;
+        }
+
+        .timeline-item {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            transform: scale(1.05);
+        }
+
+        .timeline-item .year {
+            font-size: 22px;
+            font-weight: bold;
+            color: #5d4037;
+            margin-right: 20px;
+        }
+
+        .timeline-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #6f4e37;
+        }
+
+        .timeline-item img {
+            width: 50px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .courses {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 30px;
+            color: #8b5e3c;
+            margin-bottom: 30px;
+        }
+
+        .course-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .course-item {
+            background-color: #e4d6c6;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .course-item:hover {
+            transform: scale(1.05);
+        }
+
+        .course-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .course-item p {
+            font-size: 17px;
+            color: #6f4e37;
+            margin-top: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f9ebe0;
+            border-top: 2px solid #e4d6c6;
+            color: #6f4e37;
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #8b5e3c;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #5d4037;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><marquee>&#10051;SkyRay Portfolio&#10051;</marquee></h1>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="foods.html">Foods</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="educations.html">Educations</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+    
+    <div id="intro" class="intro">
+        <h2>Welcome to My Educational Journey</h2>
+        <p>Here, you can explore my educational milestones, achievements, and the courses that have shaped my path. Let's dive into the timeline of my learning experience!</p>
+    </div>
+
+	<div class="nav">
+        <a href="#timeline" class="special-nav">Education Timeline</a>
+        <a href="#courses" class="special-nav">Highlighted Moments</a>
+    </div>
+	
+    <div id="timeline" class="timeline">
+        <h2>Education Timeline</h2>
+        <div class="timeline-item">
+            <img src="images/school1.png" alt="SJK (C) San Yuk Logo">
+            <div class="year">2011 - 2016</div>
+            <p>Studied at SJK (C) San Yuk Rawang</p>
+        </div>
+        <div class="timeline-item">
+            <img src="images/school2.png" alt="SMK Seri Garing Logo">
+            <div class="year">2017 - 2021</div>
+            <p>Studied at SMK Seri Garing Rawang</p>
+        </div>
+        <div class="timeline-item">
+            <img src="images/school3.png" alt="UiTM Logo">
+            <div class="year">2022 - Present</div>
+            <p>Diploma in Information Management at UiTM Rembau</p>
+        </div>
+    </div>
+
+    <div id="courses" class="courses">
+        <h2>&#10023;&#10023;&#10023; Highlighted Moments &#10023;&#10023;&#10023;</h2>
+        <div class="course-items">
+            <div class="course-item">
+                <p>Dekan Semester 1</p>
+                <img src="images/sem1.jpg" alt="Semester 1">
+            </div>
+            <div class="course-item">
+                <p>Dekan Semester 2</p>
+                <img src="images/sem2.jpg" alt="Semester 2">
+            </div>
+            <div class="course-item">
+                <p>Dekan Semester 3</p>
+                <img src="images/sem3.jpg" alt="Semester 3">
+            </div>
+            <div class="course-item">
+                <p>Dekan Semester 4</p>
+                <img src="images/sem4.jpg" alt="Semester 4">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Idayu's Education Journey. Beauty with brain.</p>
+    </div>
+   
+    <a href="#top" class="back-to-top">&#8593;</a>
+
+</body>
+</html>
+
+
+
+

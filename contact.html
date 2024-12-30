@@ -1,0 +1,240 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf7f1;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        .header {
+            background-color: #f9ebe0;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #e4d6c6;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #8b5e3c;
+        }
+
+        .nav {
+            background-color: #fef5ee;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #8b5e3c;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #5d4037;
+        }
+
+        .hero {
+            padding: 40px;
+            background-color: #fef7f1;
+            text-align: center;
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border: 4px solid #e4d6c6;
+            object-fit: cover;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin: 20px 0;
+            color: #8b5e3c;
+        }
+
+        .hero p {
+            color: #6f4e37;
+        }
+
+        .hero button {
+            background-color: #8b5e3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #5d4037;
+        }
+
+        .portfolio {
+            padding: 30px;
+            background-color: #ffffff;
+        }
+
+        .portfolio-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .portfolio img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f9ebe0;
+            border-top: 2px solid #e4d6c6;
+            color: #6f4e37;
+        }
+
+        .social-media {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px; /* Added margin for gap */
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #8b5e3c;
+            font-size: 30px;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #5d4037;
+        }
+
+        .social-icon {
+            font-size: 28px;
+        }
+
+    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<table>
+    
+    <tr>
+        <td colspan="3" class="header">
+            <h1><marquee>&#10051;SkyRay Portfolio&#10051;</marquee></h1>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="nav">
+            <a href="index.html">Home</a>
+            <a href="foods.html">Foods</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="educations.html">Educations</a>
+            <a href="contact.html">Contact Me</a>
+        </td>
+    </tr>
+</table>
+
+<h1 style="text-align: center; color: #8b5e3c; margin-top: 40px;">&#9743; Fill in to Reach & Contact Me &#9743;</h1>
+<form name="form1" method="post" action="mailto:idayu0607@gmail.com" style="max-width: 600px; margin: 0 auto; background-color: #e4d6c6; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <p style="margin: 10px 0;">
+        <label for="name" style="color: #6f4e37;">Name:</label>
+        <input type="text" id="name" name="name" size="25" style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #e4d6c6; border-radius: 5px;">
+    </p>
+   
+    <p style="margin: 10px 0;">
+        <label for="message" style="color: #6f4e37;">Message:</label>
+        <textarea id="message" name="message" cols="40" rows="5" style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #e4d6c6; border-radius: 5px;"></textarea>
+    </p>
+    <p style="margin: 10px 0; color: #6f4e37;">
+        <label for="status">Marital Status:</label><br>
+        <input type="checkbox" id="single" name="single" value="single">
+        <label for="single">Single</label>
+        <input type="checkbox" id="married" name="married" value="married" style="margin-left: 20px;">
+        <label for="married">Married</label>
+    </p>
+    <p style="margin: 10px 0; color: #6f4e37;">Gender:</p>
+    <p style="margin: 10px 0;">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" style="margin-right: 20px;">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </p>
+    <p style="margin: 10px 0;">
+        <label for="state" style="color: #6f4e37;">State:</label>
+        <select id="state" name="state" style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #e4d6c6; border-radius: 5px;">
+            <option value="Ked">Kedah</option>
+            <option value="Kel">Kelantan</option>
+            <option value="Ter">Terengganu</option>
+            <option value="Sel">Selangor</option>
+            <option value="Joh">Johor</option>
+            <option value="Per">Perak</option>
+            <option value="Pah">Pahang</option>
+            <option value="PP">Pulau Pinang</option>
+            <option value="N9">Negeri Sembilan</option>
+            <option value="Mel">Melaka</option>
+            <option value="Perl">Perlis</option>
+            <option value="WP">Wilayah Persekutuan</option>
+            <option value="Sab">Sabah</option>
+            <option value="Sar">Sarawak</option>
+        </select>
+    </p>
+    <p style="margin: 10px 0;">
+        <label for="gambar" style="color: #6f4e37;">Upload File:</label>
+        <input type="file" id="gambar" name="gambar" style="margin-top: 5px;">
+    </p>
+    <p style="margin: 10px 0;">
+        <input name="submit" type="submit" value="Submit" style="background-color: #8b5e3c; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+    </p>
+</form>
+
+<div class="social-media">
+    <h2 style="color: #8b5e3c;">Check out my social media:</h2>
+    <a href="mailto:idayu0607@gmail.com" class="social-icon email">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://twitter.com/id4yvv" target="_blank" class="social-icon twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/id4yvv_" target="_blank" class="social-icon instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Idayu's Contact. Let's be friends &#9786;</p>
+</div>
+
+</body>
+</html>
+

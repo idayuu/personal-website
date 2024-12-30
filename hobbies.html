@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf7f1;
+            color: #333;
+        }
+
+        .header {
+            background-color: #f9ebe0;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #e4d6c6;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #8b5e3c;
+        }
+
+        .nav {
+            background-color: #fef5ee;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #8b5e3c;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #5d4037;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .hobby-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            background-color: #e4d6c6;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .hobby-section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .hobby-description {
+            flex: 1;
+            text-align: center;
+            background-color: #8b5e3c;
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hobby-description h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .hobby-description p {
+            line-height: 1.8;
+        }
+
+        .hobby-image {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hobby-image img {
+            max-width: 400px; 
+            border-radius: 8px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            object-fit: contain; 
+        }
+		
+		.hobby-image video {
+			max-width: 550px;
+			height: auto;
+			border-radius: 8px; 
+			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+			object-fit: contain;
+		}
+
+        table {
+            width: 100%;
+            margin: 30px 0;
+            border-spacing: 20px;
+        }
+
+        td {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .movie-header {
+            background-color: #dcc3b6;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #5d4037;
+            border-radius: 8px 8px 0 0;
+            text-transform: uppercase;
+        }
+
+        .movie-image img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 8px;
+        }
+
+        .audio-item {
+            width: 300px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .audio-item img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .audio-item h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #8b5e3c;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f9ebe0;
+            border-top: 2px solid #e4d6c6;
+            color: #6f4e37;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><marquee>&#10051;SkyRay Portfolio&#10051;</marquee></h1>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="foods.html">Foods</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="educations.html">Educations</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+
+    <div class="content">
+        <div class="hobby-section">
+            <div class="hobby-description">
+                <h2>Watching Movies</h2>
+                <p>Watching movies is an entertaining hobby that takes me into different worlds. It’s a great way to spend quality time and enjoy the creativity of storytelling through visuals and emotions. </p>
+            </div>
+            <div class="hobby-image">
+                <video src="video/movie1.mp4" autoplay muted loop controls></video>
+            </div>
+        </div>
+
+        <h1 align="center">Her Favourite Movies</h1>
+        <table align="center">
+            <tr>
+                <td>
+                    <div class="movie-header">Evil Dead Rise</div>
+                    <div class="movie-image">
+                        <img src="images/movie1.jpg" alt="Evil Dead Rise">
+                    </div>
+                </td>
+                <td>
+                    <div class="movie-header">Jumanji</div>
+                    <div class="movie-image">
+                        <img src="images/movie2.jpg" alt="Jumanji">
+                    </div>
+                </td>
+                <td>
+                    <div class="movie-header">The Call</div>
+                    <div class="movie-image">
+                        <img src="images/movie3.jpg" alt="The Call">
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="hobby-section">
+            <div class="hobby-description">
+                <h2>Listening to Music</h2>
+                <p>Listening to music is a wonderful way to relax, unwind, and connect with my emotions. It allows me to explore various genres, rhythms, and lyrics that can inspire, energize, or comfort me.</p>
+            </div>
+            <div class="hobby-image">
+                 <img src="images/music.gif" alt="Listening to music">
+            </div>
+        </div>
+
+        <h1 align="center">Her Favourite Songs</h1>
+        <table align="center">
+            <tr>
+                <td>
+                    <div class="audio-item">
+                        <img src="images/song1.jpg" alt="I Wanna Be Yours">
+                        <h3>I Wanna Be Yours</h3>
+                        <audio controls>
+                            <source src="audio/song1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </td>
+                <td>
+                    <div class="audio-item">
+                        <img src="images/song2.jpg" alt="Satu Peluang">
+                        <h3>Satu Peluang</h3>
+                        <audio controls>
+                            <source src="audio/song2.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </td>
+                <td>
+                    <div class="audio-item">
+                        <img src="images/song3.jpg" alt="Sweater Weather">
+                        <h3>Sweater Weather</h3>
+                        <audio controls>
+                            <source src="audio/song3.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+	
+	<div style="text-align: center;">
+    <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/playlist/5FPvSFIh5nsiBkyNnGCj5e?utm_source=generator" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	</div>
+
+    <div class="footer">
+        <p>&copy; 2024 Idayu's Hobbies Page. All about her favourites.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

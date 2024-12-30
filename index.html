@@ -1,0 +1,205 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf7f1;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        .header {
+            background-color: #f9ebe0;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #e4d6c6;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #8b5e3c;
+        }
+
+        .nav {
+            background-color: #fef5ee;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #8b5e3c;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #5d4037;
+        }
+
+        .hero {
+			padding: 40px;
+			background-image: url('images/wallpaper.jpg'); /* Add your image here */
+			background-size: cover;
+			background-position: center;
+			text-align: center;
+			color: white; /* This ensures the text is visible on top of the background */
+		}
+
+		.hero img {
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			border: 4px solid #e4d6c6;
+			object-fit: cover;
+		}
+
+		.hero h2 {
+			font-size: 30px;
+			margin: 20px 0;
+			color: #fff; /* White color for the heading text */
+			opacity: 0;
+			transform: translateY(30px);
+			animation: fadeInUp 1.5s forwards;
+		}
+
+		.hero p {
+			font-size: 18px;
+			color: #fff; /* White color for the paragraph text */
+			opacity: 0;
+			transform: translateY(30px);
+			animation: fadeInUp 1.5s forwards;
+			animation-delay: 1s;
+		}
+
+		@keyframes fadeInUp {
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+
+        .hero button {
+            background-color: #8b5e3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #5d4037;
+        }
+
+        .portfolio {
+            padding: 30px;
+            background-color: #e4d6c6;
+        }
+
+        .portfolio-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .portfolio img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f9ebe0;
+            border-top: 2px solid #e4d6c6;
+            color: #6f4e37;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="3" class="header">
+            <h1><marquee>&#10051;SkyRay Portfolio&#10051;</marquee></h1>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="nav">
+            <a href="index.html">Home</a>
+            <a href="foods.html">Foods</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="educations.html">Educations</a>
+            <a href="contact.html">Contact Me</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="hero">
+            <img src="images/picture1.jpg" alt="Profile Picture">
+            <h2>Hi, I'm Nur Nadhratul Idayu!</h2>
+            <p>I am a Diploma in Information Management student and I love sunset.</p>
+            <a href="about-me.html">
+            <button>More About Me</button>
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="portfolio">
+            <h2 style="text-align: center; color: #8b5e3c; margin-bottom: 20px; "> Sunset Collections Gallery</h2>
+            <div class="portfolio-items">
+                <img src="images/sun1.jpg" alt="Portfolio Item">
+                <img src="images/sun2.jpg" alt="Portfolio Item">
+                <img src="images/sun3.jpg" alt="Portfolio Item">
+                <img src="images/sun4.jpg" alt="Portfolio Item">
+                <img src="images/sun5.jpg" alt="Portfolio Item">
+                <img src="images/sun6.jpg" alt="Portfolio Item">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="portfolio">
+            <div class="portfolio-items">
+                <img src="images/sun7.jpg" alt="Portfolio Item">
+                <img src="images/sun8.jpg" alt="Portfolio Item">
+                <img src="images/sun9.jpg" alt="Portfolio Item">
+                <img src="images/sun10.jpg" alt="Portfolio Item">
+                <img src="images/sun11.jpg" alt="Portfolio Item">
+                <img src="images/sun12.jpg" alt="Portfolio Item">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="footer">
+            <p>&copy; 2024 Idayu's Website. She loves sunset so much.</p>
+        </td>
+    </tr>
+</table>
+		
+</body>
+</html>
+
